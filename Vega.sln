@@ -5,6 +5,10 @@ VisualStudioVersion = 16.0.28803.352
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Vega", "Vega\Vega.csproj", "{16E5DD96-ECC2-4DD8-A5D3-C50444C448B7}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DAL Layer", "DAL Layer\DAL Layer.csproj", "{29643D52-120F-47C4-B455-A00D628B8957}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BAL Layer", "BAL Layer\BAL Layer.csproj", "{3558444B-70BF-4DAB-8A7C-DC674A8BEC32}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{16E5DD96-ECC2-4DD8-A5D3-C50444C448B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{16E5DD96-ECC2-4DD8-A5D3-C50444C448B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{16E5DD96-ECC2-4DD8-A5D3-C50444C448B7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{29643D52-120F-47C4-B455-A00D628B8957}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{29643D52-120F-47C4-B455-A00D628B8957}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{29643D52-120F-47C4-B455-A00D628B8957}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{29643D52-120F-47C4-B455-A00D628B8957}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3558444B-70BF-4DAB-8A7C-DC674A8BEC32}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3558444B-70BF-4DAB-8A7C-DC674A8BEC32}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3558444B-70BF-4DAB-8A7C-DC674A8BEC32}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3558444B-70BF-4DAB-8A7C-DC674A8BEC32}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
