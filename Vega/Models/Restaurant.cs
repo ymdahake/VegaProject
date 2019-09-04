@@ -22,6 +22,10 @@ namespace Vega.Models
 
         public Boolean IsActive { get; set; }
 
+        public string Area { get; set; }
+        public string City { get; set; }
+        public string State { get; set; }
+
         public virtual List<MenuCategory> MenuCategories { get; set; }
 
         

@@ -183,6 +183,10 @@
     <Compile Include="Migrations\201909040635287_AddedrestaurantIdAndAddedFoodCategory.Designer.cs">
       <DependentUpon>201909040635287_AddedrestaurantIdAndAddedFoodCategory.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201909040716082_AddedAddressFieldsToRestaurant.cs" />
+    <Compile Include="Migrations\201909040716082_AddedAddressFieldsToRestaurant.Designer.cs">
+      <DependentUpon>201909040716082_AddedAddressFieldsToRestaurant.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\IdentityModels.cs" />
@@ -190,6 +194,7 @@
     <Compile Include="Models\MenuCategory.cs" />
     <Compile Include="Models\MenuItem.cs" />
     <Compile Include="Models\Restaurant.cs" />
+    <Compile Include="Models\RestaurantOwner.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
@@ -249,10 +254,13 @@
     <Content Include="Views\Manage\VerifyPhoneNumber.cshtml" />
     <Content Include="Views\Shared\Lockout.cshtml" />
     <Content Include="Views\Shared\_LoginPartial.cshtml" />
+    <Content Include="Views\Restaurant\Index.cshtml" />
+    <Content Include="Views\Restaurant\Create.cshtml" />
+    <Content Include="Views\Restaurant\Edit.cshtml" />
+    <Content Include="Views\Restaurant\Details.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Views\Restaurant\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
@@ -276,6 +284,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201909040635287_AddedrestaurantIdAndAddedFoodCategory.resx">
       <DependentUpon>201909040635287_AddedrestaurantIdAndAddedFoodCategory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201909040716082_AddedAddressFieldsToRestaurant.resx">
+      <DependentUpon>201909040716082_AddedAddressFieldsToRestaurant.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
