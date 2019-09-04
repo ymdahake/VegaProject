@@ -14,7 +14,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>Vega</RootNamespace>
     <AssemblyName>Vega</AssemblyName>
-    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <MvcBuildViews>false</MvcBuildViews>
     <UseIISExpress>true</UseIISExpress>
     <Use64BitIISExpress />
@@ -25,6 +25,7 @@
     <UseGlobalApplicationHostFile />
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -53,11 +54,7 @@
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
     <Reference Include="System.ComponentModel.DataAnnotations" />
-    <Reference Include="System.Core" />
-    <Reference Include="System.Data.DataSetExtensions" />
-    <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Web" />
-    <Reference Include="System.Web.Extensions" />
     <Reference Include="System.Web.Abstractions" />
     <Reference Include="System.Web.Routing" />
     <Reference Include="System.Xml" />
@@ -170,12 +167,21 @@
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ManageController.cs" />
+    <Compile Include="Controllers\RestaurantController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Migrations\201909031817481_AddedIdentityTables.cs" />
     <Compile Include="Migrations\201909031817481_AddedIdentityTables.Designer.cs">
       <DependentUpon>201909031817481_AddedIdentityTables.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201909040621501_AddedMenuRelatedRestaurantTables.cs" />
+    <Compile Include="Migrations\201909040621501_AddedMenuRelatedRestaurantTables.Designer.cs">
+      <DependentUpon>201909040621501_AddedMenuRelatedRestaurantTables.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201909040635287_AddedrestaurantIdAndAddedFoodCategory.cs" />
+    <Compile Include="Migrations\201909040635287_AddedrestaurantIdAndAddedFoodCategory.Designer.cs">
+      <DependentUpon>201909040635287_AddedrestaurantIdAndAddedFoodCategory.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
@@ -246,6 +252,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Views\Restaurant\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
@@ -263,6 +270,12 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201909031817481_AddedIdentityTables.resx">
       <DependentUpon>201909031817481_AddedIdentityTables.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201909040621501_AddedMenuRelatedRestaurantTables.resx">
+      <DependentUpon>201909040621501_AddedMenuRelatedRestaurantTables.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201909040635287_AddedrestaurantIdAndAddedFoodCategory.resx">
+      <DependentUpon>201909040635287_AddedrestaurantIdAndAddedFoodCategory.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
